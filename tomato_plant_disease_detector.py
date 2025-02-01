@@ -35,7 +35,7 @@ from sklearn.metrics import confusion_matrix, precision_score
 
 """Load Plant Village Dataset."""
 
-!git clone https://github.com/spMohanty/PlantVillage-Dataset
+subprocess.run(["git", "clone", "https://github.com/spMohanty/PlantVillage-Dataset"], check=True)
 
 """Create empty lists for tomato leaf images (X) and labels(Y) for testing."""
 
